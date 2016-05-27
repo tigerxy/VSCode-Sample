@@ -2,7 +2,7 @@
 	"name": "sample-ext",
 	"displayName": "Sample Extension",
 	"description": "UI-Samples and Code for Extension Developers.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "RolandGreim",
 	"author": {
 		"name": "Roland Greim - http://www.rolandgreim.de/"
@@ -32,7 +32,7 @@
 	],
 	"icon": "logo.svg",
 	"galleryBanner": {
-		"color": "#232323",
+		"color": "#A8B7A4",
 		"theme": "light"
 	},
 	"activationEvents": [
