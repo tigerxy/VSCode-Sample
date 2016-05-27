@@ -1,0 +1,109 @@
+{
+	"name": "sample-ext",
+	"displayName": "Sample Extension",
+	"description": "UI-Samples and Code for Extension Developers.",
+	"version": "0.0.1",
+	"publisher": "RolandGreim",
+	"author": {
+		"name": "Roland Greim - http://www.rolandgreim.de/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tigerxy/VSCode-Sample"
+	},
+	"bugs": {
+		"url": "https://github.com/tigerxy/VSCode-Sample/issues"
+	},
+	"engines": {
+		"vscode": "^0.10.10"
+	},
+	"license": "GPL-3.0",
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"Sample",
+		"Demo",
+		"Showcase",
+		"Extension",
+		"Development",
+		"UI",
+		"vscode"
+	],
+	"icon": "logo.svg",
+	"galleryBanner": {
+		"color": "#232323",
+		"theme": "light"
+	},
+	"activationEvents": [
+		"onCommand:sample.sayHello",
+		"onCommand:sample.showInformationMessage",
+		"onCommand:sample.showErrorMessage",
+		"onCommand:sample.showWarningMessage",
+		"onCommand:sample.setStatusBarMessage",
+		"onCommand:sample.createStatusBarItem",
+		"onCommand:sample.showOutputChannel",
+		"onCommand:sample.showInputBox",
+		"onCommand:sample.showPasswordBox",
+		"onCommand:sample.showQuickPick",
+		"onCommand:sample.getExtension"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "sample.sayHello",
+				"title": "Sample: Hello World"
+			},
+			{
+				"command": "sample.showInformationMessage",
+				"title": "Sample: Show Information Message"
+			},
+			{
+				"command": "sample.showErrorMessage",
+				"title": "Sample: Show Error Message"
+			},
+			{
+				"command": "sample.showWarningMessage",
+				"title": "Sample: Show Warning Message"
+			},
+			{
+				"command": "sample.setStatusBarMessage",
+				"title": "Sample: Set Status Bar Message"
+			},
+			{
+				"command": "sample.createStatusBarItem",
+				"title": "Sample: Create Status Bar Item"
+			},
+			{
+				"command": "sample.showOutputChannel",
+				"title": "Sample: Show Output Channel"
+			},
+			{
+				"command": "sample.showInputBox",
+				"title": "Sample: Show Input Box"
+			},
+			{
+				"command": "sample.showPasswordBox",
+				"title": "Sample: Show Password Box"
+			},
+			{
+				"command": "sample.showQuickPick",
+				"title": "Sample: Show Quick Pick"
+			},
+			{
+				"command": "sample.getExtension",
+				"title": "Sample: About"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"typescript": "^1.8.5",
+		"vscode": "^0.11.0"
+	}
+}
